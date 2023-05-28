@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import './Profilestyle.js'; // Подключите файл со стилями, если у вас есть стили для компонента
+// import './Profilestyle.js'; 
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
   const { followers, views, likes } = stats;

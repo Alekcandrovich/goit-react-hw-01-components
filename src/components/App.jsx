@@ -1,10 +1,16 @@
 import React from 'react';
-import UserProfile from '../data/user.json';
-import Profile from '../components/Profile/Profile.js';
+import UserProfile from '../data/user';
+import Profile from '../components/Profile/Profile';
+import Statistics from '../components/Statistics/Statistics';
+import DataStatistics from '../data/data';
+import FriendList from '../components/FriendList/FriendList';
+import Friends from '../data/friends';
 
-export const App = () => {
+
+const App = () => {
   return (
     <div>
+
       <Profile
         username={UserProfile.username}
         tag={UserProfile.tag}
@@ -12,6 +18,11 @@ export const App = () => {
         avatar={UserProfile.avatar}
         stats={UserProfile.stats}
       />
+
+      <Statistics title="Upload stats" stats={DataStatistics} />
+      
+      <FriendList friends={Friends} />
+
     </div>
   );
 };
