@@ -1,12 +1,16 @@
 import React from 'react';
-import UserProfile from '../data/user';
+
 import Profile from '../components/Profile/Profile';
+import userProfile from '../data/user';
+
 import Statistics from '../components/Statistics/Statistics';
-import DataStatistics from '../data/data';
+import dataStatistics from '../data/data';
+
 import FriendList from '../components/FriendList/FriendList';
-import Friends from '../data/friends';
+import friends from '../data/friends';
+
 import TransactionHistory from '../components/TransactionHistory/TransactionHistory';
-import Transactions from '../data/transactions';
+import transactions from '../data/transactions';
 
 
 const App = () => {
@@ -14,18 +18,18 @@ const App = () => {
     <div>
 
       <Profile
-        username={UserProfile.username}
-        tag={UserProfile.tag}
-        location={UserProfile.location}
-        avatar={UserProfile.avatar}
-        stats={UserProfile.stats}
+        username={userProfile.username}
+        tag={userProfile.tag}
+        location={userProfile.location}
+        avatar={userProfile.avatar}
+        stats={userProfile.stats}
       />
 
-      <Statistics title="UPLOAD STATS" stats={DataStatistics} />
+      <Statistics title="UPLOAD STATS" stats={dataStatistics} />
 
-      <FriendList friends={Friends} />
+      <FriendList friends={friends} />
 
-      <TransactionHistory items={Transactions} />
+      <TransactionHistory items={transactions} />
 
     </div>
   );

@@ -7,14 +7,14 @@
   margin-bottom: 100px;
 }
 
-.transaction-thead {
+.transaction_thead {
   background-color: #67b2d4;
   text-align: center;
   padding: 10px;
   
 }
 
-.transaction-th {
+.transaction_th {
   font-size: 14px;
   font-weight: 700;
   color: #fff;
@@ -23,7 +23,7 @@
   border: 1px solid #fff;
 }
 
-.transaction-td {
+.transaction_td {
   font-size: 16px;
   font-weight: 600;
   color: #1d1b1b63;
@@ -32,10 +32,10 @@
   border: 1px solid #dadada;
  }
 
- .transaction-tbody {
+ .transaction_tbody {
   text-align: center;
 }
 
-.transaction tbody tr:nth-child(even) {
+.transaction_tbody tr:nth-child(even) {
   background-color: #eeebebe8;
 }
